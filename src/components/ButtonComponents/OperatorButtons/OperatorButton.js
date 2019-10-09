@@ -1,12 +1,18 @@
 import React from "react";
+import styled from 'styled-components'
+
+const Button = styled.button`
+background-color: #247292;
+
+`
 
 const OperatorButton = (props) => {
   return (
-    <div>
-      <button>
+    <>
+      <Button className='button'>
         {props.k.char}
-      </button>
-    </div>
+      </Button>
+    </>
   );
 };
 export default OperatorButton;

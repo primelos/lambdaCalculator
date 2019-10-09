@@ -12,9 +12,9 @@ const Operators = () => {
   return (
     <div>
       
-      {operButton.map((k, index) => (
-        <OperatorButton key={index} k={k} />
-      ))}
+      {operButton.map((k, index) => {
+       return <OperatorButton key={index} k={k} />
+      })}
 
     </div>
   );

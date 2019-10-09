@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {numbers} from '../../../data'
 import NumberButton from './NumberButton'
+import Display from "../../DisplayComponents/Display";
 
 //import any components needed
 // example of import from data.js. Note all the ../   This is how we move through folders. 
@@ -16,10 +17,11 @@ const Numbers = () => {
   // STEP 2 - add the imported data to state
   return (
     <div>
-      {num.map((i, index) => (
+      {num.map((i, index) => {
         // console.log(i)
-        <NumberButton key={index} i={i} />
-      ))}
+        return<NumberButton key={index} i={i} />
+        
+      })}
     </div>
   );
 };

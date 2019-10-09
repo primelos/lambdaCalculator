@@ -1,12 +1,19 @@
 import React from "react";
+import styled from 'styled-components';
+
+const Button = styled.button`
+background-color: #225c9d;
+
+    `
+
 
 const SpecialButton = (props) => {
   return (
-    
-     <button>
+    <>
+     <Button className='button'>
       {props.j}
-      </button>
-  
+      </Button>
+      </>
   );
 };
 export default SpecialButton;

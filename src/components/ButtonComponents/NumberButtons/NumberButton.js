@@ -1,13 +1,20 @@
 import React from "react";
- 
+import styled from 'styled-components'
+
+const Button = styled.button`
+background-color: #194379;
+
+`
+
 
 const NumberButton = (props) => {
   return (
-    <div>
-     <button>
+    <>
+     <Button className='button zero' onClick={()=> props.i }>
        {props.i}
-     </button>
-    </div>
+     </Button>
+     
+    </>
   );
 };
 export default NumberButton;
